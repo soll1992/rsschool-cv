@@ -1,0 +1,419 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #E6F5FF;
+    color: rgb(207,218,236);
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    width: 80%;
+}
+
+header {
+    height: 60px;
+    padding-top: 50px;
+    display: flex;
+    background-color:rgb(9,77,116);
+    border-bottom: 1px solid rgb(184,203,225);
+}
+
+nav {
+    width: 100%;
+    margin-left: 10%;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(184,203,225);
+    font-size: 20px;
+    margin-right: 5%;
+}
+
+.burger-menu-header {
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.burger-menu-body {
+    display: none;
+    position: absolute;
+    background-color: rgb(9,77,116);
+    border: 1px solid rgb(184,203,225);
+    right: 0;
+    width: 150px;
+}
+
+.burger-menu-body_active {
+    display: block;
+}
+
+.burger-link {
+    display: flex;
+    height: 50px;
+    text-decoration: none;
+    color: rgb(184,203,225);
+    border-bottom: 1px solid white;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-line {
+    height: 3px;
+    background-color: rgb(184,203,225);
+    margin-bottom: 7px;
+    border-radius: 20%;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.column-left {
+    width: 30%;
+    background-color: rgb(9,77,116);
+    border-right: 2px solid rgb(207,218,236);
+}
+
+.avatar {
+    width: 80%;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.name-wrapper-small {
+    display: none;
+}
+
+.contacts {
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-bottom: 50px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.contacts-title {
+    margin-left: 20%;
+}
+
+.contact {
+    margin-bottom: 10px;
+}
+
+.git-link {
+    text-decoration: none;
+    color: rgb(117,156,216);
+}
+
+.title-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.line {
+    width: 80%;
+    height: 1px;
+    margin-left: 10%;
+    background-color: rgb(207,218,236);
+}
+
+.skills {
+    margin-top: 50px;
+    margin-left: 20%;
+    margin-bottom: 50px;
+}
+
+.skills-title {
+    margin-left: 20%;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.languages {
+    margin-left: 20%;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.languages-title {
+    margin-left: 10%;
+}
+
+.language {
+    margin-bottom: 10px;
+}
+
+.column-right{
+    width: 70%;
+    color:black;
+    background-color: rgb(184,203,225);
+}
+
+.dark {
+    background-color: rgb(9,77,116);
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    font-size: 60px;
+}
+
+.skill-img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.about-myself {
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 10%;
+}
+
+.about-myself-title {
+    font-size: 30px;
+}
+
+.about-myself-content {
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.code-example {
+    margin-left: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.code-example-title {
+    font-size: 30px
+}
+.hljs {
+    padding: 0;
+    background-color: rgb(184,203,225);
+}
+pre {
+    width: 60%;
+    min-width: 445px;
+    border: 1px solid rgb(9,77,116);
+}
+
+.courses {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 10%;
+}
+
+.courses-title {
+    font-size: 30px
+}
+
+.course {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.course-link {
+    color: rgb(9,77,116);
+}
+
+.projects {
+    margin-left: 10%;
+}
+
+.project-title {
+    font-size: 30px
+}
+
+.project-info {
+    font-size: 20px;
+    width: 80%;
+}
+.pr1 {
+    position: relative;
+}
+
+.pic {
+    width: 100%;
+}
+
+.projects-title {
+    display: flex;
+    color: gold;
+    margin-top: 0;
+    justify-content: center;
+}
+
+.project-link {
+    text-decoration: none;
+    color: white;
+}
+
+.project-figcaption {
+    padding: 20px;
+    background-color: rgb(9,77,116);
+    border-radius: 0 0 20px 20px;
+}
+
+@media (max-width: 1200px) {
+    .project-figcaption {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .project-figcaption {
+        font-size: 10px;
+    }
+}
+
+.project-subtitle {
+    color: gold;
+}
+
+.tech-item {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.project-links {
+    width: 90%;  
+    display: block;
+}
+
+.img-link {
+    width: 100%;
+}
+
+footer {
+    height: 80px;
+    flex: 0 0 auto;
+    background-color: rgb(9,77,116);
+    border-top: 1px solid rgb(207,218,236);
+}
+
+.footer-link-wrapper {
+    margin-left: 30%;
+    margin-top: 15px;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.year {
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.rs-school {
+    margin-top: 5px;
+}
+
+@media(max-width:1250px) {
+    nav {
+        display: none;
+    }
+    .burger-menu-header {
+        display: block;
+        margin-left: auto;
+        margin-right: 40px;
+    }
+    .subtitle {
+        margin-left: 20%;
+    }
+    .contacts, .skills, .languages {
+        margin-left: 1%;
+    }
+}
+
+@media(max-width:890px) {
+    .content-wrapper {
+        width: 98%;
+    }
+    .code-example {
+        margin-left: 3%;
+    }
+    .code-example-title {
+        margin-left: 10%; 
+    }
+
+}
+@media(max-width:680px) {
+    main {
+        display: block;
+        background-color: rgb(184,203,225)
+    }
+    .column-left {
+        width: 100%;
+    }
+    .contacts, .skills, .languages {
+        margin-left: 20%;
+    }
+    .contacts-title, .skills-title, .languages-title {
+        margin-left: 20px;
+    }
+    .column-right {
+        width: 100%;
+    }
+    .name-wrapper {
+        display: none;
+    }
+    .name-wrapper-small {
+        display: block;
+        margin-left: 30%;
+    }
+    .name-small {
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .about-myself {
+        margin-top: 0;
+        padding-top: 10px;
+    }
+    .code-example {
+        margin-left: 1%;
+    }
+    pre {
+        min-width: 305px;
+        font-size: 11px;
+    }
+    .footer-link-wrapper {
+        margin-left: 10%;
+    }
+}
+@media(max-width:450px) {
+    .name-wrapper-small {
+        margin-left: 10%;
+    }
+}
